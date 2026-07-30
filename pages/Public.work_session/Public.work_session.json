@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "6a6b4df5c6fc4b24392891b5_27aef37f-0f66-46c6-8e63-1e9179a414de",
+  "gitSyncId": "6a6b4df5c6fc4b24392891b5_88b89947-e6a6-4454-a970-d50151499cd0",
   "unpublishedPage": {
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 900,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Public.work_session",
+    "slug": "public-work-session"
   }
 }

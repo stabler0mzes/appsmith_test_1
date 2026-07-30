@@ -1,0 +1,26 @@
+INSERT INTO public."work_session" (
+	"status",
+	"employee_id",
+	"project_id",
+	"start_datetime",
+	"end_datetime",
+	"duration_hours",
+	"hourly_rate_id",
+	"telegram_message",
+	"telegram_chat_id",
+	"telegram_message_id",
+	"note_warning_id"
+)
+VALUES (
+	'{{insert_form.formData.status}}',
+	'{{insert_form.formData.employee_id}}',
+	'{{insert_form.formData.project_id}}',
+	'{{insert_form.formData.start_datetime}}',
+	'{{insert_form.formData.end_datetime}}',
+	'{{insert_form.formData.duration_hours}}',
+	'{{insert_form.formData.hourly_rate_id}}',
+	'{{insert_form.formData.telegram_message}}',
+	'{{insert_form.formData.telegram_chat_id}}',
+	'{{insert_form.formData.telegram_message_id}}',
+	'{{insert_form.formData.note_warning_id}}'
+);

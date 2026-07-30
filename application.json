@@ -8,6 +8,10 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Public.work_session",
+      "isDefault": false
     }
   ]
 }
