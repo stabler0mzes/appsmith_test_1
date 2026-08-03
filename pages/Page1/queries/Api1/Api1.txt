@@ -1,8 +1,0 @@
-{
-  "user_id": {{ appsmith.user.email }},
-  "action": "analyze_session",
-  "payload": {
-    "session_id": {{ Table1.selectedRow.id }},
-    "note": {{ Table1.selectedRow.note_text }}
-  }
-}
