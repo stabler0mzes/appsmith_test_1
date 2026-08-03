@@ -1,1 +1,0 @@
-INSERT INTO clients (full_name, email, phone, address) VALUES ({{ inp_name.text }}, {{ inp_email.text }}, {{ inp_phone.text }}, {{ inp_address.text }}) RETURNING id;

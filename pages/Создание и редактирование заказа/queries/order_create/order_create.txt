@@ -1,1 +1,0 @@
-INSERT INTO orders (order_number, client_id, order_date, amount, status, comment) VALUES ({{ inp_order_number.text }}, {{ sel_client.selectedOptionValue }}, {{ dat_order_date.formattedDate }}, {{ inp_amount.text }}, {{ inp_status.text }}, {{ inp_comment.text }}) RETURNING id;
