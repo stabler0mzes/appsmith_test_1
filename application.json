@@ -1,0 +1,22 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#000000",
+  "evaluationVersion": 2,
+  "icon": "flight",
+  "pages": [
+    {
+      "id": "Список клиентов",
+      "isDefault": true
+    },
+    {
+      "id": "Список заказов",
+      "isDefault": false
+    },
+    {
+      "id": "Создание и редактирование заказа",
+      "isDefault": false
+    }
+  ]
+}

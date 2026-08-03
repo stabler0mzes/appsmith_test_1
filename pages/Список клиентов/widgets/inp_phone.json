@@ -1,0 +1,44 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "defaultText": "{{ appsmith.URL.queryParams.id ? ((client_list.data || []).find((r) => r.id == appsmith.URL.queryParams.id) || {}).phone : '' }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "label": "Телефон",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "minWidth": 450,
+  "parentColumnSpace": 11.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "topRow": 64,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "uwp9a9e4sa",
+  "widgetName": "inp_phone"
+}

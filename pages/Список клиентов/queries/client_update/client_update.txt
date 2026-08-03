@@ -1,0 +1,1 @@
+UPDATE clients SET full_name = {{ inp_name.text }}, email = {{ inp_email.text }}, phone = {{ inp_phone.text }}, address = {{ inp_address.text }} WHERE id = {{ appsmith.URL.queryParams.id }};

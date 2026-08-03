@@ -1,0 +1,219 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 44,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "columnOrder": [
+    "full_name",
+    "email",
+    "phone",
+    "address",
+    "id"
+  ],
+  "columnUpdatedAt": 1785769080189,
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.full_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.email.computedValue"
+    },
+    {
+      "key": "primaryColumns.phone.computedValue"
+    },
+    {
+      "key": "primaryColumns.address.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisibleSearch": false,
+  "leftColumn": 2,
+  "onRowSelected": "{{}}",
+  "parentColumnSpace": 11.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "address": {
+      "alias": "address",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_clients.processedTableData.map((currentRow) => ( currentRow[\"address\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "address",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Адрес",
+      "originalId": "address",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "email": {
+      "alias": "email",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_clients.processedTableData.map((currentRow) => ( currentRow[\"email\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "email",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Email",
+      "originalId": "email",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "full_name": {
+      "alias": "full_name",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_clients.processedTableData.map((currentRow) => ( currentRow[\"full_name\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "full_name",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Название",
+      "originalId": "full_name",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "id": {
+      "alias": "id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = tbl_clients.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "",
+      "id": "id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "id",
+      "notation": "standard",
+      "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "",
+      "width": 150
+    },
+    "phone": {
+      "alias": "phone",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_clients.processedTableData.map((currentRow) => ( currentRow[\"phone\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "phone",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Телефон",
+      "originalId": "phone",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "tableData": "{{client_list.data}}",
+  "topRow": 4,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "xor1wimib9",
+  "widgetName": "tbl_clients"
+}

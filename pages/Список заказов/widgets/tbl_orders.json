@@ -1,0 +1,282 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 44,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "columnOrder": [
+    "order_number",
+    "client_id",
+    "order_date",
+    "amount",
+    "status",
+    "comment",
+    "id"
+  ],
+  "columnUpdatedAt": 1785769815238,
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.order_number.computedValue"
+    },
+    {
+      "key": "primaryColumns.client_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.order_date.computedValue"
+    },
+    {
+      "key": "primaryColumns.amount.computedValue"
+    },
+    {
+      "key": "primaryColumns.status.computedValue"
+    },
+    {
+      "key": "primaryColumns.comment.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "leftColumn": 2,
+  "onRowSelected": "{{ navigateTo('Создание и редактирование заказа', { id: tbl_orders.selectedRow.id }) }}",
+  "parentColumnSpace": 11.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "amount": {
+      "alias": "amount",
+      "allowCellWrapping": false,
+      "columnType": "number",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"amount\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "amount",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Сумма",
+      "originalId": "amount",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "client_id": {
+      "alias": "client_id",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"client_id\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "client_id",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Клиент",
+      "originalId": "client_id",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "comment": {
+      "alias": "comment",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"comment\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "comment",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Комментарий",
+      "originalId": "comment",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "id": {
+      "alias": "id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = tbl_orders.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "",
+      "id": "id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "id",
+      "notation": "standard",
+      "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "",
+      "width": 150
+    },
+    "order_date": {
+      "alias": "order_date",
+      "allowCellWrapping": false,
+      "columnType": "date",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"order_date\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "order_date",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Дата заказа",
+      "originalId": "order_date",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "order_number": {
+      "alias": "order_number",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"order_number\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "order_number",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Номер заказа",
+      "originalId": "order_number",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "status": {
+      "alias": "status",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tbl_orders.processedTableData.map((currentRow) => ( currentRow[\"status\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "status",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Статус",
+      "originalId": "status",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "tableData": "{{order_list.data}}",
+  "topRow": 4,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "hfhtouffi6",
+  "widgetName": "tbl_orders"
+}
