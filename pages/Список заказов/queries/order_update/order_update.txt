@@ -1,0 +1,1 @@
+UPDATE orders SET order_number = {{ inp_order_number.text }}, client_id = {{ sel_client.selectedOptionValue }}, order_date = {{ dat_order_date.formattedDate }}, status = {{ inp_status.text }}, amount = {{ inp_total_amount.text }}, comment = {{ inp_comment.text }} WHERE id = {{ appsmith.URL.queryParams.id }};

@@ -1,36 +1,18 @@
 {
   "appIsExample": false,
-  "applicationDetail": {
-    "appPositioning": {
-      "type": "FIXED"
-    },
-    "navigationSetting": {},
-    "themeSetting": {
-      "appMaxWidth": "LARGE",
-      "density": 1.0,
-      "sizing": 1.0
-    }
-  },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
-  "color": "#C7F3E3",
+  "color": "#000000",
   "evaluationVersion": 2,
-  "icon": "bag",
+  "icon": "flight",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Список клиентов",
       "isDefault": true
-    }
-  ],
-  "unpublishedApplicationDetail": {
-    "appPositioning": {
-      "type": "FIXED"
     },
-    "navigationSetting": {},
-    "themeSetting": {
-      "appMaxWidth": "LARGE",
-      "density": 1.0,
-      "sizing": 1.0
+    {
+      "id": "Список заказов",
+      "isDefault": false
     }
-  }
+  ]
 }

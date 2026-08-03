@@ -1,0 +1,54 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ (() => { if (!appsmith.URL.queryParams.id) return ''; const v = ((order_list.data || []).find((r) => r.id == appsmith.URL.queryParams.id) || {}).order_date; if (!v) return ''; const d = new Date(v); return isNaN(d.getTime()) ? '' : d.toISOString(); })() }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 1,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "label": "Дата заказа",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDate": "2121-12-31T18:29:00.000Z",
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minWidth": 450,
+  "parentColumnSpace": 11.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "timePrecision": "minute",
+  "topRow": 64,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "kjdrbwf45r",
+  "widgetName": "dat_order_date"
+}
