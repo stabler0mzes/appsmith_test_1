@@ -1,15 +1,12 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0px",
   "bottomRow": 53,
   "defaultText": "{{ appsmith.URL.queryParams.id ? ((client_list.data || []).find((r) => r.id == appsmith.URL.queryParams.id) || {}).full_name : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "defaultText"
